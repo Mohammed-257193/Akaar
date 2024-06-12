@@ -1,0 +1,407 @@
+﻿/*-------------------------------HOME------------------------------*/
+
+html {
+    margin: 100px;
+}
+
+
+
+h1 {
+    color: darkgoldenrod;
+    font-size: 40px;
+    line-height: 2cm;
+    margin-top:0;
+    text-align:center;
+
+}
+
+
+
+h2 {
+    font-size: 40px;
+    color: red;
+    line-height: 5px;
+}
+ol {
+    color: black;
+    font-size: 30px;
+    line-height: 1.6cm;
+    list-style: none;
+
+}
+span{
+    color:darkblue;
+    
+}
+#hr1{
+    border:1.5px solid royalblue; 
+}
+#img1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    height: 200px;
+}
+#home {
+    border: 5px solid royalblue;
+    border-bottom-style:none;
+    background-color: lightgrey;
+    font-size: 20px;
+    border-radius: 20px;
+    direction: rtl;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#myButton-1, #myButton-2, #myButton-3, #myButton-4, #myButton-5,#myButton-6 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+    padding: 15px 30px;
+    transition: transform 0.8s;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#myButton-1 {
+    top: 5%;
+    left: 5%;
+}
+#myButton-2 {
+    top: 10%;
+    left: 5%;
+}
+#myButton-3 {
+    top: 100%;
+    left: 5%;
+
+}
+     /* تأثير التمرير */
+    #myButton-1:hover {
+        transform: scale(1.4);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+
+    }
+
+         /* تأثير التمرير */
+#myButton-2:hover {
+    transform: scale(1.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+
+}
+/* تأثير التمرير */
+#myButton-3:hover {
+    transform: scale(1.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+/* تأثير التمرير */
+#myButton-4:hover {
+    transform: scale(1.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+/* تأثير التمرير */
+#myButton-5:hover {
+    transform: scale(1.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+/* تأثير التمرير */
+#myButton-6:hover {
+    transform: scale(1.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+
+    /* -----------------------------------ABOUT-------------------------------------*/
+#h1-1 {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 15px;
+    padding-top: 20px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.9);
+    color: dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+#div2 {
+    border: 5px solid royalblue;
+    background-color: lightgrey;
+    font-size: 20px;
+    border-radius: 20px;
+    direction: rtl;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+#img2 {
+    border: 5px solid royalblue;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 30px;
+    padding-right:50px;
+    
+}
+
+#div3 {
+    font-size: 20px;
+
+    float: right; /* لجعل العنصر في الجهة اليمنى */
+    direction: rtl;
+    width: 30%;
+    margin:10px;
+    padding:10px;
+    font-size: 30px;
+    text-align:center;
+
+}
+#number{
+
+    color:blue;
+}
+
+
+
+
+
+
+
+
+.hidden-row {
+    display: none;
+}
+
+.selected-row {
+    background-color: #f0f0f0;
+}
+
+#requestFormContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+
+
+
+#body- {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#requestForm label {
+    display: block;
+    margin-top: 10px;
+}
+
+#requestForm input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#requestForm button {
+    margin-top: 10px;
+}
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+    direction: rtl;
+}
+
+.property-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+    .property-table th, .property-table td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    .property-table th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+    }
+
+    .property-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .property-table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #ddd;
+    }
+
+.form-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .form-container label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .form-container button {
+        width: 48%;
+        background-color: #28a745;
+        color: white;
+        font-size: 16px;
+    }
+
+        .form-container button[type="button"] {
+            background-color: #dc3545;
+        }
+
+        .form-container button:hover {
+            background-color: #218838;
+        }
+
+        .form-container button[type="button"]:hover {
+            background-color: #c82333;
+        }
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.form-container {
+    display: none; /* إضافة هذه الخاصية لإخفاء النموذج بشكل افتراضي */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#pd-2{
+    color:green;
+
+}
+.hidden-row {
+    display: none;
+}
+
+.selected-row {
+    background-color:lightgreen;
+}
+
+.form-container {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: red;
+}
+
+.property-details {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+}
+
+

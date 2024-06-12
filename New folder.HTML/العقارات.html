@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="ar" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <title>Akarr.net</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <button id="myButton-5">الذهاب إلى من نحن</button>
+    <button id="myButton-6">الرجوع إلى الصفحة الرئيسية</button>
+
+
+    <table dir="rtl" border="1">
+        <tr>
+            <th>المدينة</th>
+            <th width="300">تفاصيل</th>
+            <th width="250">الإيجار الشهري</th>
+            <th width="250">اظهار التفاصيل</th>
+            <th width="250">اختيار</th>
+        </tr>
+        <tr>
+            <td>دمشق</td>
+            <td>شقة غرفتان وصالة المساحة 100م</td>
+            <td>500,000 ل.س</td>
+            <td><button onclick="toggleDetails('details2', this)">إظهار التفاصيل</button></td>
+            <td><button onclick="toggleSelection(this, 'دمشق', 'شقة غرفتان وصالة المساحة 100م', '500,000 ل.س')">تحديد</button></td>
+        </tr>
+        <tr id="details2" class="hidden-row">
+            <td colspan="5">
+                <h3>تفاصيل الشقة في دمشق</h3>
+                <p>شقة غرفتان وصالة المساحة 100م، الإيجار الشهري: 500,000 ل.س</p>
+                <img src="IMG-20240612-WA0006.jpg" alt="صورة الشقة" width="300">
+                <img src="IMG-20240612-WA0009.jpg" alt="صورة الشقة" width="300">
+                <p>بوسط العاصمة دمشق </p>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>دمشق</td>
+            <td> محل تجاري المساحة 60م</td>
+            <td> 1,000,000 ل.س</td>
+            <td><button onclick="toggleDetails('details3', this)">إظهار التفاصيل</button></td>
+            <td><button onclick="toggleSelection(this,'دمشق','محل تجاري المساحة 60م','1،000،000')">تحديد</button></td>
+        </tr>
+        <tr id="details3" class="hidden-row">
+            <td colspan="5">
+                <h3>تفاصيل المحل التجاري في دمشق</h3>
+                <p>محل تجاري المساحة 60م، الإيجار الشهري: 1,000,000 ل.س</p>
+                <img src="IMG-20240612-WA0019.jpg" alt="صورة المحل" width="300">
+                <p>مزود بطاقة شمسية </p>
+            </td>
+        </tr>
+        <tr>
+            <td>ريف دمشق</td>
+            <td> مزرعة مع مسبح وبناء طبقين </td>
+            <td>500,000 ل.س</td>
+            <td><button onclick="toggleDetails('details4', this)">إظهار التفاصيل</button></td>
+            <td><button onclick="toggleSelection(this,'ريف دمشق','مزرعة مع مسبح وبناء طبقين','500,000 ')">تحديد</button></td>
+        </tr>
+        <tr id="details4" class="hidden-row">
+            <td colspan="5">
+                <h3>تفاصيل المزرعة في ريف دمشق</h3>
+                <p>مزرعة مع مسبح وبناء طبقين، الإيجار اليومي: 500,000 ل.س</p>
+                <img src="IMG-20240612-WA0011.jpg" alt="صورة المزرعة" width="300">
+                <p>تتضمن صالة العاب (بلياردو - بينغ يونغ - فيشة - 
+                ......)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>ريف دمشق</td>
+            <td>مزرعة مع مسبح وخمس غرف</td>
+            <td>300,000 ل.س</td>
+            <td><button onclick="toggleDetails('details5', this)">إظهار التفاصيل</button></td>
+            <td><button onclick="toggleSelection(this,' ريف دمشق','مزرعة مع مسبح وخمس غرف','300,000')">تحديد</button></td>
+        </tr>
+        <tr id="details5" class="hidden-row">
+            <td colspan="5">
+                <h3>تفاصيل المزرعة في ريف دمشق</h3>
+                <p>مزرعة مع مسبح وخمس غرف، الإيجار اليومي: 300,000 ل.س</p>
+                <img src="IMG-20240612-WA0010.jpg" alt="صورة المزرعة" width="300">
+                <p>يتوفر مولد كهربائي وانظمة امان بكفاءة عالية</p>
+            </td>
+        </tr>
+        <tr>
+            <td>اللاذقية</td>
+            <td>شاليه مطل على البحر اربع غرف</td>
+            <td>200,000 ل.س</td>
+            <td><button onclick="toggleDetails('details6', this)">إظهار التفاصيل</button></td>
+            <td><button onclick="toggleSelection(this,'اللاذقية','شاليه مطل على البحر اربع غرف','200,000')">تحديد</button></td>
+        </tr>
+        <tr id="details6" class="hidden-row">
+            <td colspan="5">
+                <h3>تفاصيل الشاليه في اللاذقية</h3>
+                <p>شاليه مطل على البحر اربع غرف، الإيجار اليومي: 200,000 ل.س</p>
+                <img src="123sh.jpg" alt="صورة الشاليه" width="300">
+                <p>سارع بالحجز</p>
+            </td>
+        </tr>
+        <tr>
+            <td>طرطوس</td>
+            <td>شاليه مطل على البحر ثلاث غرف</td>
+            <td>150,000 ل.س</td>
+            <td><button onclick="toggleDetails('details7', this)">إظهار التفاصيل</button></td>
+            <td><button onclick="toggleSelection(this,'طرطوس','شاليه مطل على البحر ثلاث غرف','150,000')">تحديد</button></td>
+        </tr>
+        <tr id="details7" class="hidden-row">
+            <td colspan="5">
+                <h3>تفاصيل الشاليه في طرطوس</h3>
+                <p>شاليه مطل على البحر ثلاث غرف، الإيجار اليومي: 150,000 ل.س</p>
+                <img src="images.jpg" alt="صورة الشاليه" width="300">
+                <p>فيها بلكون بمساحة 12م</p>
+            </td>
+        </tr>
+        <tr>
+            <td>حمص</td>
+            <td>منزل (عربي ستة غرف)</td>
+            <td>1,000,000 ل.س</td>
+            <td><button onclick="toggleDetails('details8', this)">إظهار التفاصيل</button></td>
+            <td><button onclick="toggleSelection(this,'حمص','منزل (عربي ستة غرف)','1,000,000')">تحديد</button></td>
+        </tr>
+        <tr id="details8" class="hidden-row">
+            <td colspan="5">
+                <h3>تفاصيل المنزل في حمص</h3>
+                <p>منزل (عربي ستة غرف)، الإيجار الشهري: 1,000,000 ل.س</p>
+                <img src="IMG-20240612-WA0002.jpg" alt="صورة المنزل" width="300">
+                <img src="IMG-20240612-WA0004.jpg" alt="صورة المنزل" width="300">
+                <img src="IMG-20240612-WA0005.jpg" alt="صورة المنزل" width="300">
+                <p>مزود بطاقة شمسية</p>
+            
+            </td>
+        </tr>
+        <tr>
+            <td>حلب</td>
+            <td>قبو صناعي المساحة 400م</td>
+            <td>3,000,000 ل.س</td>
+            <td><button onclick="toggleDetails('details9', this)">إظهار التفاصيل</button></td>
+            <td><button onclick="toggleSelection(this,'حلب','قبو صناعي المساحة 400م','3,000,000')">تحديد</button></td>
+        </tr>
+        <tr id="details9" class="hidden-row">
+            <td colspan="5">
+                <h3>تفاصيل القبو الصناعي في حلب</h3>
+                <p>قبو صناعي المساحة 400م، الإيجار الشهري: 3,000,000 ل.س</p>
+                <img src="download.jpg" alt="صورة القبو" width="300">
+                <p>للمزيد من التفاصيل عن العقار التواصل عبر الرقم: 0968791553.</p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- زر المتابعة -->
+    <button id="continueButton" style="display: none;" onclick="showRequestForm()">متابعة</button>
+
+    <div id="requestForm" class="form-container">
+        <form id="form" onsubmit="return validateForm()">
+            <label for="fullName">الاسم الكامل:</label>
+            <input type="text" id="fullName" name="fullName" pattern="[\u0621-\u064A\s]+" title="يرجى إدخال أحرف عربية فقط"><br>
+
+            <label for="nationalID">الرقم الوطني:</label>
+            <input type="text" id="nationalID" name="nationalID" pattern="\d{11}" title="يرجى إدخال 11 رقمًا" required><br>
+
+            <label for="birthDate">تاريخ الميلاد:</label>
+            <input type="date" id="birthDate" name="birthDate"><br>
+
+            <label for="mobileNumber">رقم الهاتف المحمول:</label>
+            <input type="text" id="mobileNumber" name="mobileNumber" pattern="09[3-9]\d{7}|094\d{7}" title="يرجى إدخال رقم هاتف صحيح"><br>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <!-- إضافة الكابتشا -->
+            <label for="captcha">أدخل النص في الصورة:</label><br>
+            <img id="captchaImage" alt="Captcha Image"><br>
+            <input type="text" id="captcha" name="captcha" required><br>
+
+            <div id="error-message" class="error-message"></div>
+
+            <button type="submit">إرسال</button>
+            <button type="button" onclick="cancelRequest()">إلغاء</button>
+        </form>
+    </div>
+
+    <div id="propertyDetails" class="property-details">
+        <h2 id="pd-2">تم ارسال الطلب</h2>
+        <h3 id="pd-3">تفاصيل العقار المحدد</h3>
+        <p id="propertyCity"></p>
+        <p id="propertyDescription"></p>
+        <p id="propertyRent"></p>
+    </div>
+
+
+    <script>
+        function toggleDetails(detailsId, button) {
+            var detailsRow = document.getElementById(detailsId);
+
+            if (detailsRow.style.display === "none" || detailsRow.style.display === "") {
+                detailsRow.style.display = "table-row";
+                button.textContent = "إخفاء التفاصيل";
+            } else {
+                detailsRow.style.display = "none";
+                button.textContent = "إظهار التفاصيل";
+            }
+        }
+        document.getElementById("myButton-5").addEventListener("click", function () {
+            window.open("file:///F:/IWB%20202/New%20folder.HTML/AboutUs.html", "_blank");
+        });
+        document.getElementById("myButton-6").addEventListener("click", function () {
+            window.open("file:///F:/IWB%20202/New%20folder.HTML/Home.html", "_blank");
+        });
+
+    </script>
+    <script src="script1.js"></script>
+
+</body>
+</html>
